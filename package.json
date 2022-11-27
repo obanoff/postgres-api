@@ -7,7 +7,7 @@
 
   "scripts": {
     "migrate": "node-pg-migrate",
-    "start": "nodemon index.js"
+    "start": "nodemon index.mjs"
   },
   "keywords": [],
   "author": "",
