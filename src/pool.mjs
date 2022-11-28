@@ -13,9 +13,8 @@ class Pool {
     return this._pool.end();
   }
 
-  // REALLY BIG SECURITY ISSUE HERE!
-  query(sql) {
-    return this._pool.query(sql);
+  query(sql, params) {
+    return this._pool.query(sql, params);
   }
 }
 
