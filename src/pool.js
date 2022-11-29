@@ -1,3 +1,5 @@
+// class wrapper for pg pool. allows to establish multiple connections to DB
+
 
 import pg from 'pg';
 

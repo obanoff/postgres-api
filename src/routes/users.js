@@ -1,6 +1,7 @@
+// router
 
 import express from 'express';
-import UserRepo from '../repos/user-repo.mjs';
+import UserRepo from '../repos/user-repo.js';
 
 const router = express.Router();
 

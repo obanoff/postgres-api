@@ -1,6 +1,7 @@
+// CRUD functionality. Resository pattern
 
-import pool from '../pool.mjs';
-import toCamelCase from './utils/to-camel-case.mjs';
+import pool from '../pool.js';
+import toCamelCase from './utils/to-camel-case.js';
 
 export default class UserRepo {
   static async find() {
@@ -53,6 +54,12 @@ export default class UserRepo {
     } catch (error) {
       console.error(error.message);
     }
+  }
+
+  static async count() {
+    const { rows } = await pool.query('SELECT COUNT(*) FROM users;');
+
+    return +rows[0].count;
   }
 }
 

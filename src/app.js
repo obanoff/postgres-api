@@ -1,6 +1,7 @@
+// setup middleware for the app
 
 import express from 'express';
-import usersRouter from './routes/users.mjs';
+import usersRouter from './routes/users.js';
 
 export default () => {
   const app = express();

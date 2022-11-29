@@ -1,6 +1,7 @@
+// main file, app runner.
 
-import app from './src/app.mjs';
-import pool from './src/pool.mjs';
+import app from './src/app.js';
+import pool from './src/pool.js';
 
 const port = 3005;
 

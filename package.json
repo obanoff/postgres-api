@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
     "migrate": "node-pg-migrate",
-    "start": "nodemon index.mjs"
+    "start": "nodemon index.mjs",
+    "test": "jest --no-cache"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "keywords": [],
   "author": "",
@@ -22,5 +27,9 @@
     "pg": "^8.8.0",
     "pg-format": "^1.0.4",
     "supertest": "^6.3.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1"
   }
 }

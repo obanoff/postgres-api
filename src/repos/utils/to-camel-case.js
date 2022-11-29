@@ -1,3 +1,4 @@
+// utility function, turns object keys to camelCase
 
 export default (rows) => {
   return rows.map(row => {
